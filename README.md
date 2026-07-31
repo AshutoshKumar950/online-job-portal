@@ -1,4 +1,4 @@
-# 💼 Online-Job-Portal-Using-Python-Django
+# 💼 Online Job Portal Using Python Django
 
 
 <p align="center">
