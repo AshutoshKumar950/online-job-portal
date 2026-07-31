@@ -1,0 +1,1381 @@
+/* =====================================
+   REGISTER PAGE HEADER
+===================================== */
+
+
+.register-banner{
+
+
+    background:linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    color:white;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    border-radius:0 0 40px 40px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+.register-banner h1{
+
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.register-banner p{
+
+
+    font-size:16px;
+
+    opacity:0.9;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   MAIN REGISTER SECTION
+===================================== */
+
+
+.container.py-5{
+
+
+    padding-top:60px !important;
+
+    padding-bottom:60px !important;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   CARD DESIGN
+===================================== */
+
+
+.card{
+
+
+    border-radius:25px !important;
+
+    background:white;
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+
+.card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.15) !important;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   LEFT SIDE PROFILE CARD
+===================================== */
+
+
+.col-lg-5 .card{
+
+
+    background:
+    linear-gradient(
+        145deg,
+        #ffffff,
+        #f1f7ff
+    );
+
+
+}
+
+
+
+
+
+.col-lg-5 img{
+
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.col-lg-5 h2{
+
+
+    color:#0d47a1;
+
+    font-size:30px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+.col-lg-5 p{
+
+
+    color:#64748b;
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   LEFT FEATURE ICON
+===================================== */
+
+
+.col-lg-5 .d-flex i{
+
+
+    width:50px;
+
+    height:50px;
+
+    background:#e3f2fd;
+
+    color:#1976d2;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px !important;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.col-lg-5 .d-flex:hover i{
+
+
+    background:#1976d2;
+
+    color:white;
+
+    transform:rotate(360deg);
+
+
+}
+
+
+
+
+
+
+
+.col-lg-5 h5{
+
+
+    color:#0b1a33;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   RIGHT REGISTER FORM
+===================================== */
+
+
+.col-lg-7 .card{
+
+
+    padding:45px !important;
+
+    border-top:5px solid #1976d2 !important;
+
+
+}
+
+
+
+
+.col-lg-7 h2{
+
+
+    color:#0d47a1;
+
+    font-size:32px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+.col-lg-7 p{
+
+
+    color:#64748b;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   FORM LABEL
+===================================== */
+
+
+.form-label{
+
+
+    font-weight:600;
+
+    color:#0b1a33;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   INPUT DESIGN
+===================================== */
+
+
+.form-control{
+
+
+    height:50px;
+
+    border-radius:14px;
+
+    border:1px solid #dbe3f0;
+
+    padding:10px 18px;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.form-control:focus{
+
+
+    border-color:#1976d2;
+
+    box-shadow:
+
+    0 0 0 4px rgba(25,118,210,0.15);
+
+
+}
+
+
+
+
+
+
+
+textarea.form-control{
+
+
+    height:auto;
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   RADIO BUTTON
+===================================== */
+
+
+input[type="radio"]{
+
+
+    accent-color:#1976d2;
+
+    width:17px;
+
+    height:17px;
+
+
+}
+
+
+
+
+/* =====================================
+   REGISTER BUTTON DESIGN
+===================================== */
+
+
+.btn-dark{
+
+
+    height:52px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#0d47a1 !important;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:0.3px;
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+
+.btn-dark:hover{
+
+
+    background:#1976d2 !important;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(25,118,210,0.35);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   LOGIN LINK SECTION
+===================================== */
+
+
+.text-center.mt-3{
+
+
+    color:#64748b;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+.text-center.mt-3 a{
+
+
+    color:#1976d2;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.text-center.mt-3 a:hover{
+
+
+    color:#0d47a1;
+
+    text-decoration:underline;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   PASSWORD INPUT EFFECT
+===================================== */
+
+
+input[type="password"]{
+
+
+    letter-spacing:1px;
+
+
+}
+
+
+
+
+input[type="password"]:focus{
+
+
+    border-color:#0d47a1;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   FORM ROW SPACING
+===================================== */
+
+
+.row.g-3{
+
+
+    margin-top:15px;
+
+
+}
+
+
+
+
+
+.col-md-6,
+.col-md-12{
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   FORM FIELD HOVER
+===================================== */
+
+
+.form-control:hover{
+
+
+    border-color:#1976d2;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   MESSAGE ALERT DESIGN
+===================================== */
+
+
+.alert{
+
+
+    max-width:1100px;
+
+    margin:20px auto;
+
+    border-radius:15px;
+
+    border:none;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   LEFT CARD FEATURE ANIMATION
+===================================== */
+
+
+.col-lg-5 .d-flex{
+
+
+    padding:12px;
+
+    border-radius:15px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.col-lg-5 .d-flex:hover{
+
+
+    background:white;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,0.08);
+
+    transform:translateX(8px);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   REGISTER CARD TOP LINE
+===================================== */
+
+
+.col-lg-7 .card::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:5px;
+
+    background:#ffca28;
+
+    top:0;
+
+    left:40px;
+
+    border-radius:0 0 10px 10px;
+
+
+}
+
+
+
+
+.col-lg-7 .card{
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   PAGE ANIMATION
+===================================== */
+
+
+@keyframes registerAnimation{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+.card{
+
+
+    animation:registerAnimation 0.7s ease;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:768px){
+
+
+
+.col-lg-7 .card{
+
+
+    padding:30px !important;
+
+
+}
+
+
+
+
+.col-lg-5 img{
+
+
+    max-height:220px;
+
+
+}
+
+
+
+
+
+.col-lg-5 h2,
+.col-lg-7 h2{
+
+
+    font-size:26px;
+
+
+}
+
+
+
+
+
+.btn-dark{
+
+
+    height:48px;
+
+
+}
+
+
+
+}
+/* =====================================
+   SOCIAL LOGIN SECTION
+===================================== */
+
+
+.social-register{
+
+
+    margin-top:25px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.social-register p{
+
+
+    color:#64748b;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.social-btn{
+
+
+    height:48px;
+
+    border-radius:14px;
+
+    border:1px solid #dbe3f0;
+
+    background:white;
+
+    font-weight:600;
+
+    color:#0b1a33;
+
+    transition:0.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+
+}
+
+
+
+
+
+.social-btn:hover{
+
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,0.12);
+
+
+}
+
+
+
+
+.social-btn i{
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+.social-btn.google i{
+
+
+    color:#ea4335;
+
+
+}
+
+
+
+
+
+.social-btn.facebook i{
+
+
+    color:#1877f2;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   TRUST BADGE SECTION
+===================================== */
+
+
+.register-trust{
+
+
+    margin-top:50px;
+
+    background:#f1f7ff;
+
+    padding:35px 20px;
+
+    border-radius:30px;
+
+
+}
+
+
+
+
+
+.trust-item{
+
+
+    text-align:center;
+
+    padding:20px;
+
+
+}
+
+
+
+
+
+.trust-item i{
+
+
+    width:60px;
+
+    height:60px;
+
+    background:#1976d2;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.trust-item h4{
+
+
+    color:#0d47a1;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+.trust-item p{
+
+
+    color:#64748b;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SECURITY BOX
+===================================== */
+
+
+.security-box{
+
+
+    margin-top:35px;
+
+    padding:25px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+
+    border-radius:25px;
+
+    color:white;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.security-box i{
+
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+    color:#ffca28;
+
+
+}
+
+
+
+
+
+.security-box h3{
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+.security-box p{
+
+
+    color:rgba(255,255,255,0.85);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   REGISTER IMAGE EFFECT
+===================================== */
+
+
+.col-lg-5 img{
+
+
+    transition:0.5s ease;
+
+
+}
+
+
+
+
+
+.col-lg-5 img:hover{
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   INPUT ICON READY DESIGN
+===================================== */
+
+
+.input-group .form-control{
+
+
+    border-radius:0 14px 14px 0;
+
+
+}
+
+
+
+
+
+.input-group-text{
+
+
+    background:#e3f2fd;
+
+    border:none;
+
+    color:#1976d2;
+
+    border-radius:14px 0 0 14px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SUCCESS MESSAGE SWEET ALERT MATCH
+===================================== */
+
+
+.swal2-popup{
+
+
+    border-radius:25px !important;
+
+    font-family:"Poppins",sans-serif !important;
+
+
+}
+
+
+
+
+
+.swal2-confirm{
+
+
+    background:#0d47a1 !important;
+
+    border-radius:12px !important;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   FINAL HOVER EFFECT
+===================================== */
+
+
+.col-lg-5 .card,
+.col-lg-7 .card{
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.col-lg-7 .card:hover{
+
+
+    border-color:#1976d2;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   LARGE SCREEN OPTIMIZATION
+===================================== */
+
+
+@media(min-width:1200px){
+
+
+
+.container{
+
+
+    max-width:1200px;
+
+
+}
+
+
+
+
+
+.col-lg-5 .card{
+
+
+    padding:35px !important;
+
+
+}
+
+
+
+
+.col-lg-7 .card{
+
+
+    padding:50px !important;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SMALL MOBILE DEVICE
+===================================== */
+
+
+@media(max-width:576px){
+
+
+
+.register-banner h1{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+.register-banner p{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.col-lg-7 .card{
+
+
+    padding:20px !important;
+
+
+}
+
+
+
+.form-control{
+
+
+    height:46px;
+
+
+}
+
+
+
+.trust-item{
+
+
+    padding:15px;
+
+
+}
+
+
+
+.security-box{
+
+
+    padding:20px;
+
+
+}
+
+
+
+}

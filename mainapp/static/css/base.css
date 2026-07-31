@@ -1,0 +1,907 @@
+
+/* ===============================
+   BODY
+================================ */
+
+
+body{
+
+    font-family:"Poppins", sans-serif;
+
+    background:#f8f9fa;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   NAVBAR DESIGN
+================================ */
+
+
+.custom-navbar{
+
+
+    background:linear-gradient(90deg,#ffffff,#e3f2fd);
+
+    padding:12px 0;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   LOGO IMAGE
+================================ */
+
+
+.logo-img{
+
+
+    width:75px;
+
+    height:75px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:5px;
+
+    border-radius:50%;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.20);
+
+    transition:0.4s;
+
+
+}
+
+
+
+.logo-img:hover{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   WEBSITE TITLE
+================================ */
+
+
+.portal-title{
+
+
+    font-size:23px;
+
+    font-weight:700;
+
+    margin-left:12px;
+
+    background:linear-gradient(90deg,#0d47a1,#1976d2);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    letter-spacing:0.5px;
+
+    white-space:nowrap;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   NAVBAR LINKS
+================================ */
+
+
+.custom-navbar .nav-link{
+
+
+    color:#0d47a1;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-left:18px;
+
+    position:relative;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.custom-navbar .nav-link:hover{
+
+
+    color:#1976d2;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* Active Menu */
+
+
+.custom-navbar .nav-link.active{
+
+
+    color:#1976d2;
+
+
+}
+
+
+
+
+
+
+
+/* Underline Animation */
+
+
+.custom-navbar .nav-link::after{
+
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    background:#1976d2;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.custom-navbar .nav-link:hover::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+/* Mobile Toggle */
+
+
+.navbar-toggler{
+
+
+    border:2px solid #1976d2;
+
+
+}
+
+
+
+.navbar-toggler-icon{
+
+
+    filter:invert(30%) sepia(90%) saturate(1000%);
+
+
+}
+
+/* =================================
+   FOOTER MAIN DESIGN
+================================= */
+
+
+.custom-footer{
+
+
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+
+    color:white;
+
+    margin-top:50px;
+
+    box-shadow:0 -5px 20px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   SOCIAL SECTION
+================================= */
+
+
+.footer-social{
+
+
+    background:#ffffff;
+
+    padding:20px 0;
+
+    border-bottom:1px solid #ddd;
+
+
+}
+
+
+
+
+
+.footer-social h6{
+
+
+    color:#0d47a1;
+
+    font-size:16px;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* SOCIAL ICONS */
+
+
+.social-icon{
+
+
+    width:42px;
+
+    height:42px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#1976d2;
+
+    color:white;
+
+    margin-left:10px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.social-icon:hover{
+
+
+    background:#ffca28;
+
+    color:#0d47a1;
+
+    transform:translateY(-5px) rotate(5deg);
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   FOOTER CONTENT
+================================= */
+
+
+.footer-content{
+
+
+    padding:45px 0;
+
+
+}
+
+
+
+
+
+.footer-content h5{
+
+
+    color:#ffeb3b;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.footer-content p{
+
+
+    color:#e3f2fd;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+.footer-content ul{
+
+
+    list-style:none;
+
+    padding:0;
+
+
+}
+
+
+
+
+
+.footer-content ul li{
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.footer-content ul li a{
+
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.footer-content ul li a:hover{
+
+
+    color:#ffeb3b;
+
+    padding-left:8px;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   FOOTER ICON COLOR
+================================= */
+
+
+.footer-content i{
+
+
+    color:#ffeb3b;
+
+    margin-right:8px;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   COPYRIGHT
+================================= */
+
+
+.footer-bottom{
+
+
+    background:#082032;
+
+    padding:18px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:14px;
+
+    letter-spacing:0.5px;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+
+@media(max-width:768px){
+
+
+
+.footer-social{
+
+
+    text-align:center;
+
+
+}
+
+
+
+.social-icon{
+
+
+    margin:5px;
+
+
+}
+
+
+
+.footer-content{
+
+
+    text-align:center;
+
+
+}
+
+
+
+.footer-content h5::after{
+
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+
+}
+
+
+
+}
+/* =================================
+   LOGIN & REGISTER BUTTON STYLE
+================================= */
+
+
+/* Register Button */
+
+.custom-navbar .nav-item:nth-last-child(2) .nav-link{
+
+
+    background:#1976d2;
+
+    color:white;
+
+    padding:8px 22px;
+
+    border-radius:25px;
+
+    margin-left:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+
+
+.custom-navbar .nav-item:nth-last-child(2) .nav-link:hover{
+
+
+    background:#0d47a1;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* Login Button */
+
+
+.custom-navbar .nav-item:last-child .nav-link{
+
+
+    background:#ffca28;
+
+    color:#0d47a1;
+
+    padding:8px 25px;
+
+    border-radius:25px;
+
+    margin-left:15px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.custom-navbar .nav-item:last-child .nav-link:hover{
+
+
+    background:#0d47a1;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   NAVBAR SMOOTH EFFECT
+================================= */
+
+
+.custom-navbar{
+
+
+    transition:0.4s;
+
+
+}
+
+
+
+
+
+.custom-navbar:hover{
+
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+
+
+/* Brand Animation */
+
+
+.navbar-brand{
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.navbar-brand:hover{
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   FOOTER EXTRA EFFECT
+================================= */
+
+
+.custom-footer a{
+
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+
+
+.footer-content a:hover{
+
+
+    letter-spacing:0.5px;
+
+
+}
+
+
+
+
+
+
+
+/* Footer Heading Line */
+
+
+.footer-content h5{
+
+
+    position:relative;
+
+    padding-bottom:10px;
+
+
+}
+
+
+
+.footer-content h5::after{
+
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:45px;
+
+    height:3px;
+
+    background:#ffeb3b;
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   MOBILE NAVBAR
+================================= */
+
+
+@media(max-width:991px){
+
+
+
+.portal-title{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+.logo-img{
+
+
+    width:60px;
+
+    height:60px;
+
+
+}
+
+
+
+
+
+.custom-navbar .navbar-collapse{
+
+
+    margin-top:15px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+.custom-navbar .nav-link{
+
+
+    margin:8px 0;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.custom-navbar .nav-item:nth-last-child(2) .nav-link,
+.custom-navbar .nav-item:last-child .nav-link{
+
+
+    margin-left:0;
+
+    margin-top:10px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   PAGE SMOOTH DESIGN
+================================= */
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+

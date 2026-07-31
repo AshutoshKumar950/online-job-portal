@@ -1,0 +1,29 @@
+{% extends 'userbase.html' %}
+{% load static %}
+{% block main %}
+
+<h1>View Job Seekers Complaints</h1> 
+<hr/>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>Contact No</th>
+        <th>Subject</th>
+        <th>Complaint</th>
+        <th>Posted Date</th>
+    </tr>
+    
+        {% for r in res %}
+    <tr>
+    <td>{{r.id}}</td>
+    <td>{{r.name}}</td>
+    <td>{{r.contactno}}</td>
+    <td>{{r.subject}}</td>
+    <td>{{r.responsetext}}</td>
+    <td>{{r.posteddate}}</td>
+    </tr>
+        {%endfor%}
+</table>
+
+{% endblock %}

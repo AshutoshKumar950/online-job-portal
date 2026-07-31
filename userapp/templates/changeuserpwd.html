@@ -1,0 +1,47 @@
+{% extends 'userbase.html'%}
+{% load static %}
+
+{% block main %}
+<h2 style="color:rgb(98, 10, 180); text-align:center;">change User Password</h2>
+{% if messages %}
+                {% for m in  messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{m}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                 {% endfor %}  
+            {% endif %}
+<hr/>
+<form class="form-group" method="post">
+    {% csrf_token %}
+    <table class="table table-bordered" style="width:80%; margin:auto;">
+        <tr>
+            <td>Enter old Password</td>
+            <td>
+            <input type="password" name="oldpassword" class="form-control" required/>
+            </td>
+        </tr>
+         <tr>
+            <td>Enter New Password</td>
+            <td>
+            <input type="password" name="newpassword" class="form-control" required/>
+            </td>
+        </tr>
+         <tr>
+            <td>Comfirm Password</td>
+            <td>
+            <input type="password" name="comfirmpassword" class="form-control" required/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-success">Change pwd</button>
+                        </td>
+        </tr>
+
+    </table>
+
+</form>
+
+{%endblock%}

@@ -1,0 +1,733 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<!-- ================= HERO SECTION START ================= -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-7 col-md-12">
+
+                <div class="hero-content">
+
+                    <h1>
+
+                        Find Your Dream Job with
+
+                        <span>HireHub</span>
+
+                    </h1>
+
+                    <p>
+
+                        Search opportunities posted by HireHub and apply
+                        with your jobseeker profile.
+
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="{% url 'register' %}" class="btn btn-light btn-lg me-3">
+
+                            Create Account
+
+                        </a>
+
+                        <a href="{% url 'about' %}" class="btn btn-outline-light btn-lg">
+
+                            Learn More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-5 col-md-12">
+
+                <div class="card border-0 shadow-lg search-card">
+
+                    <div class="card-body p-4">
+
+                        <h2 class="mb-4">
+
+                            Quick Job Search
+
+                        </h2>
+
+                        <form method="post">
+
+                            {% csrf_token %}
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Keyword
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Job title or skill">
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+
+                                    Location
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="City or remote">
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-dark w-100">
+
+                                Search Jobs
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HERO SECTION END ================= -->
+ <!-- ==========================
+    WHY HIREHUB SECTION START
+========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-7">
+
+                <div class="why-box">
+
+                    <h2>
+
+                        Why HireHub Works Better
+
+                    </h2>
+
+                    <p>
+
+                        A focused platform for serious hiring and faster
+                        job discovery.
+
+                    </p>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-4">
+
+                            <div class="feature-box">
+
+                                <h4>
+
+                                    Verified Jobs
+
+                                </h4>
+
+                                <p>
+
+                                    Real openings managed directly
+                                    by the HireHub admin team.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="feature-box">
+
+                                <h4>
+
+                                    Fast Apply
+
+                                </h4>
+
+                                <p>
+
+                                    Apply quickly with
+                                    profile-based applications.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="feature-box">
+
+                                <h4>
+
+                                    Simple Tracking
+
+                                </h4>
+
+                                <p>
+
+                                    Track every application
+                                    from your dashboard.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-5">
+
+                <div class="snapshot-box">
+
+                    <h2>
+
+                        Platform Snapshot
+
+                    </h2>
+
+                    <div class="row g-3 mt-2">
+
+                        <div class="col-6">
+
+                            <div class="count-box">
+
+                                <h3>12k+</h3>
+
+                                <span>Job Seekers</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <div class="count-box">
+
+                                <h3>3k+</h3>
+
+                                <span>Applications</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <div class="count-box">
+
+                                <h3>8k+</h3>
+
+                                <span>Jobs Posted</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <div class="count-box">
+
+                                <h3>96%</h3>
+
+                                <span>Success Rate</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+    POPULAR JOB CATEGORY
+========================== -->
+
+<section class="pb-5">
+
+    <div class="container">
+
+        <div class="category-section">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+
+                <h2>
+
+                    Popular Job Categories
+
+                </h2>
+
+                <a href="{% url 'jobs' %}" class="btn btn-outline-dark">
+
+                    Explore All Categories
+
+                </a>
+
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Software</strong>
+
+                        <small>320 Jobs</small>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Marketing</strong>
+
+                        <small>210 Jobs</small>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Design</strong>
+
+                        <small>145 Jobs</small>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Finance</strong>
+
+                        <small>98 Jobs</small>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Healthcare</strong>
+
+                        <small>76 Jobs</small>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-item">
+
+                        <strong>Sales</strong>
+
+                        <small>182 Jobs</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+    SECTION END
+========================== -->
+<!-- ===========================
+        LATEST JOBS START
+=========================== -->
+
+<section class="latest-job-section py-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-8">
+
+                <h2 class="mb-4 fw-bold">
+
+                    Latest Jobs
+
+                </h2>
+
+                <!-- Job Card 1 -->
+
+                <div class="job-card mb-4">
+
+                    <span class="badge bg-dark job-type">
+
+                        Full Time
+
+                    </span>
+
+                    <h3>
+
+                        Django Developer
+
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Posted by HireHub Admin
+
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Python</span>
+
+                        <span>Django</span>
+
+                        <span>REST API</span>
+
+                        <span>ORM</span>
+
+                        <span>OOPS</span>
+
+                        <span>MySQL</span>
+
+                    </div>
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-outline-dark btn-sm mt-3">
+
+                        <i class="fa-solid fa-paper-plane me-2"></i>
+    Apply Now
+
+                    </a>
+
+                </div>
+
+                <!-- Job Card 2 -->
+
+                <div class="job-card mb-4">
+
+                    <span class="badge bg-dark job-type">
+
+                        Full Time
+
+                    </span>
+
+                    <h3>
+
+                        UI/UX Developer
+
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Posted by HireHub Admin
+
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Bootstrap</span>
+
+                    </div>
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-outline-dark btn-sm mt-3">
+
+                       <i class="fa-solid fa-paper-plane me-2"></i>
+    Apply Now
+
+                    </a>
+
+                </div>
+
+                <!-- Job Card 3 -->
+
+                <div class="job-card mb-4">
+
+                    <span class="badge bg-dark job-type">
+
+                        Full Time
+
+                    </span>
+
+                    <h3>
+
+                        MERN Developer
+
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Posted by HireHub Admin
+
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JS</span>
+
+                        <span>React.js</span>
+
+                        <span>Node.js</span>
+
+                        <span>Express.js</span>
+
+                        <span>MongoDB</span>
+
+                    </div>
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-outline-dark btn-sm mt-3">
+
+                        <i class="fa-solid fa-paper-plane me-2"></i>
+                        Apply Now
+
+                    </a>
+
+                </div>
+
+                <!-- Job Card 4 -->
+
+                <div class="job-card mb-4">
+
+                    <span class="badge bg-dark job-type">
+
+                        Full Time
+
+                    </span>
+
+                    <h3>
+
+                        Data Scientist
+
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Posted by HireHub Admin
+
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Python</span>
+
+                        <span>R</span>
+
+                        <span>Numpy</span>
+
+                        <span>Pandas</span>
+
+                        <span>Matplotlib</span>
+
+                        <span>Scikit-learn</span>
+
+                        <span>Tensorflow</span>
+
+                    </div>
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-outline-dark btn-sm mt-3">
+
+                        <i class="fa-solid fa-paper-plane me-2"></i>
+                        Apply Now
+
+                    </a>
+
+                </div>
+
+                <!-- Job Card 5 -->
+
+                <div class="job-card">
+
+                    <span class="badge bg-dark job-type">
+
+                        Full Time
+
+                    </span>
+
+                    <h3>
+
+                        Frontend Developer
+
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Posted by HireHub Admin
+
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Python</span>
+
+                        <span>HTML</span>
+
+                        <span>Django</span>
+
+                        <span>Vue.js</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-outline-dark btn-sm mt-3">
+
+                        <i class="fa-solid fa-paper-plane me-2"></i>
+                        Apply Now
+
+                    </a>
+
+                </div>
+
+                <!-- Browse Button -->
+
+                <div class="mt-5">
+
+                    <a href="{% url 'viewjobs' %}" class="btn btn-success">
+
+                        Browse All
+
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-4">
+
+                <div class="hire-box">
+
+                    <h2>
+
+                        Ready to Get Hired?
+
+                    </h2>
+
+                    <p>
+
+                        Create your profile and start applying
+                        to jobs in minutes.
+
+                    </p>
+
+                    <a href="{% url 'register' %}" class="btn btn-light w-100 mb-3">
+
+                        Register Now
+
+                    </a>
+
+                    <a href="{% url 'login' %}" class="btn btn-outline-light w-100 mb-3">
+
+                        Login
+
+                    </a>
+
+                    <a href="{% url 'contact' %}" class="btn btn-outline-light w-100">
+
+                        Need Help?
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        LATEST JOBS END-->
+
+
+{% endblock %}

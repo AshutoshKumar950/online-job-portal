@@ -1,0 +1,463 @@
+/* ======================================
+   LOGIN HEADER / BANNER
+====================================== */
+
+
+.login-banner{
+
+    background:linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    color:white;
+
+    border-radius:0 0 40px 40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+.login-banner h1{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.login-banner p{
+
+    font-size:16px;
+
+    opacity:0.9;
+
+}
+
+
+
+
+
+
+/* ======================================
+   LOGIN MAIN CARD
+====================================== */
+
+
+.login-box{
+
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+
+
+/* ======================================
+   LEFT FORM AREA
+====================================== */
+
+
+.login-form-area{
+
+
+    padding:50px;
+
+    background:#ffffff;
+
+
+}
+
+
+
+
+
+.login-form-area h2{
+
+
+    color:#0d47a1;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.login-form-area p{
+
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.login-form-area h6{
+
+
+    color:#0b1a33;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* INPUT DESIGN */
+
+
+.login-form-area .form-control{
+
+
+    height:52px;
+
+    border-radius:15px;
+
+    border:1px solid #dbe3f0;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.login-form-area .form-control:focus{
+
+
+    border-color:#1976d2;
+
+    box-shadow:
+    0 0 0 4px rgba(25,118,210,0.15);
+
+}
+
+
+
+
+
+
+
+
+/* ======================================
+   LOGIN BUTTON
+====================================== */
+
+
+.login-btn{
+
+
+    width:100%;
+
+    height:52px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#0d47a1;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.login-btn:hover{
+
+
+    background:#1976d2;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+
+/* CREATE ACCOUNT */
+
+
+.create-account{
+
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+.create-account a{
+
+
+    color:#1976d2;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+.create-account a:hover{
+
+
+    text-decoration:underline;
+
+
+}
+
+
+
+
+
+
+
+
+/* ======================================
+   RIGHT IMAGE AREA
+====================================== */
+
+
+.login-image-area{
+
+
+    background:linear-gradient(
+        135deg,
+        #e3f2fd,
+        #ffffff
+    );
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px;
+
+
+}
+
+
+
+
+
+.login-image-area img{
+
+
+    width:100%;
+
+    max-width:420px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transition:0.4s;
+
+
+}
+
+
+
+
+.login-image-area img:hover{
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+
+/* ======================================
+   ALERT MESSAGE
+====================================== */
+
+
+.alert{
+
+
+    border-radius:12px;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+
+@media(max-width:768px){
+
+
+
+.login-banner{
+
+
+    padding:40px 15px;
+
+
+}
+
+
+
+
+.login-banner h1{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.login-box{
+
+
+    margin:35px 15px;
+
+
+}
+
+
+
+
+.login-form-area{
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+.login-image-area{
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+.login-image-area img{
+
+
+    max-width:280px;
+
+
+}
+
+
+}

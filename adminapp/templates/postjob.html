@@ -1,0 +1,69 @@
+{% extends 'adminbase.html'%}
+{% load static %}
+
+{% block admin %}
+
+<h2 style="color: blueviolet; text-align: center;">Post Job</h1>
+    {% if messages %}
+                {% for m in  messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{m}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                 {% endfor %}  
+            {% endif %}
+<hr/>
+<form class="form-group" method="post">
+    {% csrf_token %}
+    <table class="table table-bordered" style="width: 50%; margin: auto;">
+        <tr>
+            <td>Enter Job Title</td>
+            <td>
+                <input type="text" name="title" class="form-control" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Job Description</td>
+            <td>
+                <textarea name="description" class="form-control" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Location</td>
+            <td>
+                <input type="text" name="location" class="form-control" required/>
+            </td>
+            <tr>
+                <td>Enter Salary</td>
+                <td>
+                    <input type="number" name="salary" class="form-control" required/>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Select Job type</td>
+                <td>
+                    <select class="form-control" name="jobtype">
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Internship Time</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Last Date</td>
+                <td>
+                    <input type="date" name="lastdate" class="form-control" required/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn btn-success">Post Job</button>
+                </td>
+            </tr>
+    </table>
+    </form>
+
+{%endblock%}

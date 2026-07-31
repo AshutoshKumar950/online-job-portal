@@ -1,0 +1,1570 @@
+/* =====================================
+   ADMIN DASHBOARD CSS PART - 1
+===================================== */
+
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+
+body{
+
+    background:#f5f7fb;
+    overflow-x:hidden;
+
+}
+
+
+
+/* ===============================
+        SIDEBAR
+================================ */
+
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:#111827;
+
+    padding:20px 15px;
+
+    color:white;
+
+    z-index:1000;
+
+}
+
+
+
+
+/* LOGO */
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+    text-align:center;
+
+    color:#38bdf8;
+
+    padding:15px 0 30px;
+
+    letter-spacing:1px;
+
+}
+
+
+
+
+
+/* MENU */
+
+.menu{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.menu p{
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    margin:25px 15px 10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+
+
+
+.menu li{
+
+    margin:8px 0;
+
+}
+
+
+
+
+
+.menu li a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-decoration:none;
+
+    color:#e5e7eb;
+
+    padding:13px 15px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+
+.menu li a i{
+
+    width:30px;
+
+    font-size:17px;
+
+}
+
+
+
+
+.menu li a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+.menu li.active a{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+/* SUB MENU */
+
+.menu ul{
+
+    list-style:none;
+
+    padding-left:45px;
+
+    margin-top:5px;
+
+}
+
+
+
+.menu ul li a{
+
+    padding:10px;
+
+    font-size:14px;
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+.menu ul li a:hover{
+
+    background:none;
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+
+/* ===============================
+        MAIN AREA
+================================ */
+
+
+.main{
+
+    margin-left:260px;
+
+    min-height:100vh;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+        TOP NAVBAR
+================================ */
+
+
+.navbar{
+
+    height:75px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+.menu-btn{
+
+    font-size:22px;
+
+    color:#334155;
+
+    margin-right:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.search{
+
+    width:320px;
+
+    height:42px;
+
+    border:none;
+
+    outline:none;
+
+    background:#f1f5f9;
+
+    border-radius:25px;
+
+    padding:0 20px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+/* ADMIN PROFILE */
+
+
+.admin{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+
+
+
+
+.admin img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:2px solid #2563eb;
+
+}
+
+
+
+
+
+
+/* DASHBOARD CONTAINER */
+
+.dashboard{
+
+    padding:35px;
+
+}
+
+
+
+.dashboard h1{
+
+    font-size:32px;
+
+    font-weight:600;
+
+    color:#1e293b;
+
+}
+/* =====================================
+      ADMIN DASHBOARD CSS PART - 2
+   DASHBOARD CARDS + FOOTER
+===================================== */
+
+
+
+/* ===============================
+        DASHBOARD CARDS
+================================ */
+
+
+.card-box{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.card-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:5px;
+
+    top:0;
+
+    left:0;
+
+    background:#2563eb;
+
+}
+
+
+
+
+
+.card-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+
+
+/* CARD ICON */
+
+
+.card-box i{
+
+    width:65px;
+
+    height:65px;
+
+    line-height:65px;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+
+
+.card-box:hover i{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+/* CARD NUMBER */
+
+
+.card-box h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#1e293b;
+
+    margin:5px 0;
+
+}
+
+
+
+
+
+
+/* CARD TITLE */
+
+
+.card-box p{
+
+    font-size:16px;
+
+    color:#64748b;
+
+    margin:0;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+
+
+
+/* DIFFERENT CARD COLORS */
+
+
+.row .col-md-3:nth-child(2) .card-box::before{
+
+    background:#16a34a;
+
+}
+
+
+
+.row .col-md-3:nth-child(2) i{
+
+    color:#16a34a;
+
+    background:#dcfce7;
+
+}
+
+
+
+
+.row .col-md-3:nth-child(3) .card-box::before{
+
+    background:#f59e0b;
+
+}
+
+
+
+.row .col-md-3:nth-child(3) i{
+
+    color:#f59e0b;
+
+    background:#fef3c7;
+
+}
+
+
+
+
+.row .col-md-3:nth-child(4) .card-box::before{
+
+    background:#9333ea;
+
+}
+
+
+
+.row .col-md-3:nth-child(4) i{
+
+    color:#9333ea;
+
+    background:#f3e8ff;
+
+}
+
+
+
+
+
+
+
+/* SECOND ROW CARDS */
+
+
+.row.mt-4 .card-box::before{
+
+    background:#0ea5e9;
+
+}
+
+
+
+
+
+.row.mt-4 .card-box i{
+
+    color:#0ea5e9;
+
+    background:#e0f2fe;
+
+}
+
+
+
+
+
+.row.mt-4 .col-md-4:nth-child(2) .card-box::before{
+
+    background:#ef4444;
+
+}
+
+
+
+.row.mt-4 .col-md-4:nth-child(2) i{
+
+    color:#ef4444;
+
+    background:#fee2e2;
+
+}
+
+
+
+
+
+.row.mt-4 .col-md-4:nth-child(3) .card-box::before{
+
+    background:#22c55e;
+
+}
+
+
+
+.row.mt-4 .col-md-4:nth-child(3) i{
+
+    color:#22c55e;
+
+    background:#dcfce7;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+             FOOTER
+================================ */
+
+
+footer{
+
+    background:#111827;
+
+    color:#cbd5e1;
+
+    text-align:center;
+
+    padding:18px;
+
+    margin-top:40px;
+
+    font-size:14px;
+
+    letter-spacing:0.5px;
+
+}
+
+
+
+
+footer:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+        SCROLLBAR DESIGN
+================================ */
+
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+    background:#e2e8f0;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+       BUTTON EFFECT
+================================ */
+
+
+.card-box h3{
+
+    animation:count 0.6s ease;
+
+}
+
+
+
+@keyframes count{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.5);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+/* =====================================
+      ADMIN DASHBOARD CSS PART - 3
+   RESPONSIVE DESIGN
+===================================== */
+
+
+
+/* ===============================
+        LARGE TABLET VIEW
+================================ */
+
+
+@media(max-width:1100px){
+
+
+.sidebar{
+
+    width:220px;
+
+}
+
+
+.main{
+
+    margin-left:220px;
+
+}
+
+
+
+.search{
+
+    width:250px;
+
+}
+
+
+
+.dashboard{
+
+    padding:25px;
+
+}
+
+
+
+.card-box{
+
+    padding:20px;
+
+}
+
+
+
+.card-box h3{
+
+    font-size:26px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+        TABLET VIEW
+================================ */
+
+
+@media(max-width:900px){
+
+
+
+.sidebar{
+
+    left:-260px;
+
+    transition:0.4s;
+
+}
+
+
+
+
+.sidebar.active{
+
+    left:0;
+
+}
+
+
+
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+
+
+
+.navbar{
+
+    padding:0 20px;
+
+}
+
+
+
+
+.menu-btn{
+
+    display:inline-block;
+
+}
+
+
+
+
+
+.dashboard h1{
+
+    font-size:28px;
+
+}
+
+
+
+
+
+.search{
+
+    width:220px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+        MOBILE VIEW
+================================ */
+
+
+@media(max-width:600px){
+
+
+
+.sidebar{
+
+    width:240px;
+
+}
+
+
+
+
+.navbar{
+
+    height:auto;
+
+    padding:15px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+
+
+
+
+.navbar>div:first-child{
+
+    width:100%;
+
+}
+
+
+
+.search{
+
+    width:75%;
+
+}
+
+
+
+
+
+.admin{
+
+    width:100%;
+
+    justify-content:flex-end;
+
+}
+
+
+
+
+
+.dashboard{
+
+    padding:15px;
+
+}
+
+
+
+
+
+.dashboard h1{
+
+    font-size:24px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.row{
+
+    margin-top:20px !important;
+
+}
+
+
+
+
+
+.card-box{
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.card-box i{
+
+    width:55px;
+
+    height:55px;
+
+    line-height:55px;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.card-box h3{
+
+    font-size:24px;
+
+}
+
+
+
+
+
+footer{
+
+    font-size:12px;
+
+    padding:15px;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+       EXTRA SMALL MOBILE
+================================ */
+
+
+@media(max-width:400px){
+
+
+
+.logo{
+
+    font-size:24px;
+
+}
+
+
+
+
+
+.search{
+
+    width:65%;
+
+    height:38px;
+
+}
+
+
+
+.menu-btn{
+
+    font-size:20px;
+
+}
+
+
+
+.admin img{
+
+    width:35px;
+
+    height:35px;
+
+}
+
+
+
+.card-box{
+
+    padding:18px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+        SIDEBAR MENU ANIMATION
+================================ */
+
+
+.menu li a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.menu li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+
+    bottom:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    transition:.4s;
+
+}
+
+
+
+.menu li a:hover::after{
+
+    left:0;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+        SMOOTH EFFECT
+================================ */
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+.card-box,
+.sidebar,
+.navbar{
+
+    transition:all .3s ease;
+
+}
+/* =====================================
+      ADMIN DASHBOARD CSS PART - 4
+   EXTRA PROFESSIONAL UI EFFECTS
+===================================== */
+
+
+
+/* ===============================
+      MAIN BACKGROUND DESIGN
+================================ */
+
+
+.main{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* ===============================
+      STICKY NAVBAR
+================================ */
+
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      SIDEBAR SCROLL
+================================ */
+
+
+.sidebar{
+
+    overflow-y:auto;
+
+}
+
+
+
+.sidebar::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      DASHBOARD TITLE
+================================ */
+
+
+.dashboard h1{
+
+    position:relative;
+
+    padding-bottom:10px;
+
+}
+
+
+
+.dashboard h1::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:70px;
+
+    height:4px;
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      CARD GLASS EFFECT
+================================ */
+
+
+.card-box{
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+
+
+.card-box:hover{
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      ICON ROTATE EFFECT
+================================ */
+
+
+.card-box:hover i{
+
+    transform:rotate(360deg);
+
+}
+
+
+
+.card-box i{
+
+    transition:.6s;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      ACTIVE MENU EFFECT
+================================ */
+
+
+.menu li.active a{
+
+    box-shadow:0 5px 15px rgba(37,99,235,.4);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      ADMIN IMAGE EFFECT
+================================ */
+
+
+.admin img{
+
+    transition:.4s;
+
+}
+
+
+
+.admin img:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      SEARCH BOX EFFECT
+================================ */
+
+
+.search:focus{
+
+    background:white;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      CARD TOP COLOR ANIMATION
+================================ */
+
+
+.card-box::before{
+
+    animation:lineMove 3s infinite;
+
+}
+
+
+
+@keyframes lineMove{
+
+
+0%{
+
+    width:0;
+
+}
+
+
+50%{
+
+    width:100%;
+
+}
+
+
+100%{
+
+    width:0;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      DASHBOARD FADE IN
+================================ */
+
+
+.dashboard{
+
+    animation:fadeDashboard .6s ease;
+
+}
+
+
+
+@keyframes fadeDashboard{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+}
+
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      FOOTER DESIGN UPDATE
+================================ */
+
+
+footer{
+
+    border-top:3px solid #2563eb;
+
+}
+
+
+
+footer span{
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      PRINT HIDE ELEMENTS
+================================ */
+
+
+@media print{
+
+
+.sidebar,
+.navbar,
+footer{
+
+    display:none;
+
+}
+
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+}

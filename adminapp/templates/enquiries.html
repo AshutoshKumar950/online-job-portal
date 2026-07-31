@@ -1,0 +1,40 @@
+{% extends 'adminbase.html'%}
+{% load static %}
+
+{% block admin %}
+<h1>View Enquiries</h1>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact No</th>
+            <th>Email Address</th>
+            <th>Enquiry Text</th>
+            <th>Posted Date</th>
+            <th> Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for e in enq %}
+        <tr>
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.contactno}}</td>
+            <td>{{e.emailaddress}}</td>
+            <td>{{e.Enquirytext}}</td>
+            <td>{{e.posteddade}}</td>
+            <td>
+                <a  href="{% url 'deleteenq' id=e.id %}">
+                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+{%endblock%}

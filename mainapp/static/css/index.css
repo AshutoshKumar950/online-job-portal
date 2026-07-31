@@ -1,0 +1,1535 @@
+/*==================================================
+        ROOT COLORS
+==================================================*/
+
+:root{
+
+    --primary:#166AC5;
+    --primary-dark:#0F56A3;
+    --yellow:#FFC107;
+
+    --white:#ffffff;
+    --light:#F8FAFC;
+
+    --heading:#1F2937;
+    --text:#6B7280;
+
+    --border:#E5E7EB;
+
+}
+
+
+body{
+
+    background:var(--light);
+    color:var(--text);
+
+}
+
+
+/*==================================================
+                HERO SECTION
+==================================================*/
+
+
+.hero-section{
+
+    background:linear-gradient(
+        135deg,
+        #166AC5,
+        #0F56A3
+    );
+
+    padding:90px 0;
+
+}
+
+
+/* HERO CONTENT */
+
+
+.hero-content{
+
+    padding-top:20px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:62px;
+    font-weight:700;
+    line-height:1.15;
+
+    color:white;
+
+}
+
+
+.hero-content h1 span{
+
+    display:block;
+    color:var(--yellow);
+
+}
+
+
+.hero-content p{
+
+    font-size:20px;
+
+    line-height:34px;
+
+    color:#E4ECF8;
+
+    max-width:650px;
+
+    margin:25px 0 35px;
+
+}
+
+
+/* HERO BUTTON */
+
+
+.hero-content .btn{
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+
+
+.btn-light{
+
+    background:var(--yellow);
+
+    color:#000;
+
+    border:none;
+
+}
+
+
+.btn-light:hover{
+
+    background:#E0A800;
+
+}
+
+
+
+.btn-outline-light{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+
+.btn-outline-light:hover{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+
+
+/*==================================================
+                SEARCH CARD
+==================================================*/
+
+
+.search-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+    0 15px 40px rgba(22,106,197,.20);
+
+}
+
+
+
+.search-card h2{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+
+
+/* FORM */
+
+
+.form-label{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:var(--heading);
+
+}
+
+
+
+.form-control{
+
+    height:56px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+}
+
+
+.form-control:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:
+    0 0 0 .2rem rgba(22,106,197,.20);
+
+}
+
+
+
+/* SEARCH BUTTON */
+
+
+.search-card .btn-dark{
+
+    height:56px;
+
+    width:100%;
+
+    background:var(--primary);
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+
+
+.search-card .btn-dark:hover{
+
+    background:var(--yellow);
+
+    color:black;
+
+}
+
+
+
+/*==================================================
+            WHY HIREHUB SECTION
+==================================================*/
+
+
+.why-box{
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #166AC5,
+    #0F56A3
+    );
+
+
+    border-radius:20px;
+
+    padding:50px;
+
+    color:white;
+
+}
+
+
+
+.why-box h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+
+
+.why-box p{
+
+    color:#E8F1FC;
+
+    font-size:18px;
+
+}
+
+
+
+/* FEATURE BOX */
+
+
+.feature-box{
+
+
+    background:
+    rgba(255,255,255,.08);
+
+
+    border-left:
+    4px solid var(--yellow);
+
+
+    padding:20px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.feature-box:hover{
+
+    transform:translateY(-6px);
+
+    background:
+    rgba(255,255,255,.15);
+
+}
+
+
+
+.feature-box h4{
+
+    color:var(--yellow);
+
+    font-size:24px;
+
+}
+
+
+
+.feature-box p{
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+
+/*==================================================
+            SNAPSHOT SECTION
+==================================================*/
+
+
+.snapshot-box{
+
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+.snapshot-box h2{
+
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+
+
+
+.count-box{
+
+
+    background:#F8FBFF;
+
+    border:1px solid #DCEBFA;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.count-box:hover{
+
+    background:var(--primary);
+
+}
+
+
+
+.count-box h3{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+
+
+.count-box:hover h3{
+
+    color:var(--yellow);
+
+}
+
+
+
+.count-box span{
+
+    font-weight:600;
+
+}
+
+
+
+/*==================================================
+            CATEGORY SECTION
+==================================================*/
+
+
+.category-section{
+
+    padding:80px 0;
+
+}
+
+
+
+.category-section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+
+/* CATEGORY CARD */
+
+
+.category-item{
+
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:30px 18px;
+
+    text-align:center;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+    0 8px 25px rgba(22,106,197,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.category-item:hover{
+
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+
+
+.category-item strong{
+
+
+    display:block;
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+
+
+.category-item small{
+
+    color:var(--text);
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+.hero-content h1{
+
+    font-size:45px;
+
+}
+
+
+.why-box{
+
+    margin-bottom:30px;
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.hero-content{
+
+    text-align:center;
+
+}
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+.category-section h2{
+
+    font-size:30px;
+
+}
+
+
+}
+
+
+/*==================================================
+            LATEST JOB SECTION
+==================================================*/
+
+
+.latest-job-section{
+
+    padding:80px 0;
+
+    background:#F4F9FF;
+
+}
+
+
+
+.latest-job-section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#166AC5;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/*==================================================
+                JOB CARD
+==================================================*/
+
+
+.job-card{
+
+
+    position:relative;
+
+
+    background:#ffffff;
+
+
+    border-radius:20px;
+
+
+    padding:35px;
+
+
+    margin-bottom:30px;
+
+
+    border:1px solid #E5EEF8;
+
+
+    box-shadow:
+    0 10px 30px rgba(22,106,197,.10);
+
+
+    transition:.35s;
+
+
+}
+
+
+
+.job-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#166AC5;
+
+
+    box-shadow:
+    0 20px 40px rgba(22,106,197,.18);
+
+
+}
+
+
+
+/*==================================================
+                JOB TYPE BADGE
+==================================================*/
+
+
+.job-type{
+
+
+    position:absolute;
+
+
+    top:30px;
+
+
+    right:30px;
+
+
+    background:#166AC5 !important;
+
+
+    color:white !important;
+
+
+    padding:9px 22px;
+
+
+    border-radius:30px;
+
+
+    font-size:14px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.job-type:hover{
+
+
+    background:#FFC107 !important;
+
+
+    color:#222 !important;
+
+
+}
+
+
+
+/*==================================================
+                JOB TITLE
+==================================================*/
+
+
+.job-card h3{
+
+
+    font-size:30px;
+
+
+    font-weight:700;
+
+
+    color:#166AC5;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.job-card p{
+
+
+    font-size:16px;
+
+
+    color:#6B7280;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/*==================================================
+                JOB TAGS
+==================================================*/
+
+
+.job-tags{
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    gap:10px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.job-tags span{
+
+
+    background:#EAF4FF;
+
+
+    color:#166AC5;
+
+
+    padding:8px 16px;
+
+
+    border-radius:30px;
+
+
+    font-size:14px;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.job-tags span:hover{
+
+
+    background:#166AC5;
+
+
+    color:white;
+
+
+}
+
+
+
+/*==================================================
+                APPLY BUTTON
+==================================================*/
+
+
+.job-card .btn{
+
+
+    background:#166AC5;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:12px 28px;
+
+
+    border-radius:10px;
+
+
+    font-weight:600;
+
+
+    font-size:15px;
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.job-card .btn i{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.job-card .btn:hover{
+
+
+    background:#FFC107;
+
+
+    color:#222;
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+/*==================================================
+                BROWSE ALL BUTTON
+==================================================*/
+
+
+.btn-success{
+
+
+    background:#166AC5;
+
+
+    border:none;
+
+
+    color:white;
+
+
+    padding:14px 35px;
+
+
+    border-radius:10px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.btn-success:hover{
+
+
+    background:#FFC107;
+
+
+    color:#222;
+
+
+}
+
+
+
+/*==================================================
+                RIGHT HIRE BOX
+==================================================*/
+
+
+.hire-box{
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #166AC5,
+    #0F56A3
+    );
+
+
+    color:white;
+
+
+    border-radius:22px;
+
+
+    padding:40px;
+
+
+    position:sticky;
+
+
+    top:30px;
+
+
+    box-shadow:
+    0 20px 40px rgba(22,106,197,.25);
+
+
+}
+
+
+
+.hire-box h2{
+
+
+    color:#FFC107;
+
+
+    font-size:34px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.hire-box p{
+
+
+    color:#EAF4FF;
+
+
+    font-size:17px;
+
+
+    line-height:30px;
+
+
+    margin:20px 0 30px;
+
+
+}
+
+
+
+/*==================================================
+                HIRE BUTTONS
+==================================================*/
+
+
+.hire-box .btn{
+
+
+    width:100%;
+
+
+    padding:13px;
+
+
+    border-radius:10px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.hire-box .btn-light{
+
+
+    background:#FFC107;
+
+
+    color:#222;
+
+
+    border:none;
+
+
+}
+
+
+
+.hire-box .btn-light:hover{
+
+
+    background:white;
+
+
+    color:#166AC5;
+
+
+}
+
+
+
+.hire-box .btn-outline-light:hover{
+
+
+    background:#FFC107;
+
+
+    border-color:#FFC107;
+
+
+    color:#222;
+
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+    .hire-box{
+
+        margin-top:35px;
+
+        position:static;
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .latest-job-section{
+
+        padding:60px 0;
+
+    }
+
+
+
+    .latest-job-section h2{
+
+        font-size:32px;
+
+    }
+
+
+
+    .job-card{
+
+        padding:25px;
+
+    }
+
+
+
+    .job-card h3{
+
+        font-size:24px;
+
+    }
+
+
+
+    .job-type{
+
+        position:static;
+
+        display:inline-block;
+
+        margin-bottom:15px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .job-card{
+
+        padding:20px;
+
+    }
+
+
+
+    .job-tags span{
+
+        font-size:13px;
+
+        padding:6px 12px;
+
+    }
+
+
+
+    .hire-box{
+
+        padding:25px;
+
+    }
+
+
+
+}
+
+
+/*==================================================
+              FOOTER SECTION
+==================================================*/
+
+
+.footer-section{
+
+    background:#0F56A3;
+
+    color:white;
+
+    padding:60px 0 25px;
+
+}
+
+
+
+.footer-section h4{
+
+    color:#FFC107;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-section p{
+
+    color:#EAF4FF;
+
+    font-size:15px;
+
+    line-height:28px;
+
+}
+
+
+
+.footer-section ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.footer-section ul li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.footer-section ul li a{
+
+    text-decoration:none;
+
+    color:#EAF4FF;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-section ul li a:hover{
+
+    color:#FFC107;
+
+    padding-left:5px;
+
+}
+
+
+
+/* FOOTER SOCIAL ICON */
+
+
+.footer-social a{
+
+    width:38px;
+
+    height:38px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#166AC5;
+
+    color:white;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-social a:hover{
+
+    background:#FFC107;
+
+    color:#222;
+
+}
+
+
+
+/* FOOTER BOTTOM */
+
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#EAF4FF;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/*==================================================
+              CONTACT / CTA SECTION
+==================================================*/
+
+
+.cta-section{
+
+    background:#166AC5;
+
+    padding:70px 0;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.cta-section h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:#FFC107;
+
+}
+
+
+
+.cta-section p{
+
+    font-size:18px;
+
+    color:#EAF4FF;
+
+    margin:20px auto 30px;
+
+    max-width:700px;
+
+}
+
+
+
+.cta-section .btn{
+
+    padding:14px 35px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/*==================================================
+              COMMON BUTTON STYLE
+==================================================*/
+
+
+.btn-custom{
+
+
+    background:#FFC107;
+
+    color:#222;
+
+    border:none;
+
+    padding:13px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-custom:hover{
+
+
+    background:white;
+
+    color:#166AC5;
+
+
+}
+
+
+
+
+/*==================================================
+              SCROLL EFFECT
+==================================================*/
+
+
+.card-animation{
+
+    transition:.35s;
+
+}
+
+
+
+.card-animation:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+
+
+/*==================================================
+              MOBILE FINAL RESPONSIVE
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+    .footer-section{
+
+        text-align:center;
+
+    }
+
+
+    .footer-social{
+
+        margin-top:20px;
+
+    }
+
+
+    .cta-section h2{
+
+        font-size:32px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .footer-section{
+
+        padding:45px 0 20px;
+
+    }
+
+
+
+    .cta-section{
+
+        padding:50px 15px;
+
+    }
+
+
+
+    .cta-section h2{
+
+        font-size:28px;
+
+    }
+
+
+
+    .cta-section p{
+
+        font-size:16px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .footer-section h4{
+
+        font-size:20px;
+
+    }
+
+
+
+    .footer-section p{
+
+        font-size:14px;
+
+    }
+
+
+
+    .footer-bottom{
+
+        font-size:13px;
+
+    }
+
+
+}

@@ -1,0 +1,472 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+<!-- ==========================================
+                ABOUT HERO SECTION
+=========================================== -->
+
+<section class="container-fluid about-hero py-5">
+
+    <div class="container py-5">
+
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+
+            <div class="col-lg-6">
+
+                <span class="badge about-badge rounded-pill px-3 py-2 mb-3">
+
+                    About HireHub
+
+                </span>
+
+                <h1 class="display-4 fw-bold text-white mb-4">
+
+                    Building Better Careers
+
+                </h1>
+
+                <p class="lead text-white mb-4">
+
+                    HireHub helps job seekers discover admin-posted opportunities through a fast, transparent, and trusted platform.
+
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+
+                    <a href="/register/" class="btn btn-light btn-lg px-4">
+
+                        Get Started
+
+                    </a>
+
+                    <a href="/contact/" class="btn btn-outline-light btn-lg px-4">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+                <img src="{% static 'img/about.png' %}"
+                     class="img-fluid about-hero-img"
+                     alt="About HireHub">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            OUR MISSION & VALUES
+========================================== -->
+
+<section class="container-fluid py-5 bg-white">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-12 text-center">
+
+                <span class="section-title">
+
+                    WHY HIREHUB
+
+                </span>
+
+                <h2 class="fw-bold mt-3">
+
+                    Our Mission and Values
+
+                </h2>
+
+                <p class="text-secondary">
+
+                    Everything we build is focused on trust, speed, and quality hiring outcomes.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card about-card h-100 border-0 shadow">
+
+                    <div class="card-body text-center p-5">
+
+                        <div class="icon-pill mb-4">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                        <h4 class="fw-bold mb-3">
+
+                            Clear Purpose
+
+                        </h4>
+
+                        <p class="text-secondary mb-0">
+
+                            Help job seekers find meaningful careers through a clean and focused job portal.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card about-card h-100 border-0 shadow">
+
+                    <div class="card-body text-center p-5">
+
+                        <div class="icon-pill mb-4">
+
+                            <i class="fa-solid fa-shield-heart"></i>
+
+                        </div>
+
+                        <h4 class="fw-bold mb-3">
+
+                            Trust First
+
+                        </h4>
+
+                        <p class="text-secondary mb-0">
+
+                            We focus on authentic opportunities, quality profiles, and reliable communication.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card about-card h-100 border-0 shadow">
+
+                    <div class="card-body text-center p-5">
+
+                        <div class="icon-pill mb-4">
+
+                            <i class="fa-solid fa-rocket"></i>
+
+                        </div>
+
+                        <h4 class="fw-bold mb-3">
+
+                            Fast Experience
+
+                        </h4>
+
+                        <p class="text-secondary mb-0">
+
+                            From search to application status, our tools reduce friction for candidates.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ==========================================
+            HOW HIREHUB WORKS
+========================================== -->
+
+<section class="container-fluid py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-6">
+
+                <span class="section-title">
+
+                    SIMPLE PROCESS
+
+                </span>
+
+                <h2 class="fw-bold mt-3 mb-3">
+
+                    How HireHub Works
+
+                </h2>
+
+                <p class="text-secondary mb-4">
+
+                    Simple steps designed to save time and improve hiring quality.
+
+                </p>
+
+                <div class="process-step mb-3">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <div>
+
+                        <h5 class="fw-bold">
+
+                            Create Your Profile
+
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+
+                            Candidates set up profiles in minutes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="process-step mb-3">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <div>
+
+                        <h5 class="fw-bold">
+
+                            Match and Connect
+
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+
+                            Discover relevant jobs and apply quickly.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <div>
+
+                        <h5 class="fw-bold">
+
+                            Hire with Confidence
+
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+
+                            Track your applications and status from one place.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-6">
+
+                <div class="row g-4">
+
+                    <div class="col-6">
+
+                        <div class="counter-card">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <h2>
+
+                                10K+
+
+                            </h2>
+
+                            <p>
+
+                                Active Candidates
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="counter-card">
+
+                            <i class="fa-solid fa-file-circle-check"></i>
+
+                            <h2>
+
+                                2K+
+
+                            </h2>
+
+                            <p>
+
+                                Applications
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="counter-card">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <h2>
+
+                                95%
+
+                            </h2>
+
+                            <p>
+
+                                Satisfaction Rate
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="counter-card">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                            <h2>
+
+                                24/7
+
+                            </h2>
+
+                            <p>
+
+                                Support Ready
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                CALL TO ACTION
+========================================== -->
+
+<section class="container-fluid py-5 about-cta">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="text-center">
+
+                    <h2 class="fw-bold text-white">
+
+                        Ready to Start with HireHub?
+
+                    </h2>
+
+                    <p class="text-white mt-3 mb-4">
+
+                        Join as a job seeker and make your next opportunity happen faster.
+
+                    </p>
+
+                    <a href="/register/" class="btn btn-light btn-lg me-3">
+
+                        Create Account
+
+                    </a>
+
+                    <a href="/login/" class="btn btn-outline-light btn-lg">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

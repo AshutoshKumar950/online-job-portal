@@ -1,0 +1,39 @@
+{% extends 'adminbase.html'%}
+{% load static %}
+
+{% block admin %}
+<h1>Job seekers management</h1>
+<hr/>
+<table class="table table-bordered" style="margin: auto; width: 100%;">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Contact No</th>
+            <th>Email Address</th>
+            <th>Qualification</th>
+            <th>Experience</th>
+            <th>Key Skills</th>
+            <th>Address</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for j in js %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{j.name}}</td>
+                <td>{{j.gender}}</td>
+                <td>{{j.contactno}}</td>
+                <td>{{j.emailaddress}}</td>
+                <td>{{j.qualification}}</td>
+                <td>{{j.experience}}</td>
+                <td>{{j.keyskill}}</td>
+                <td>{{j.address}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{%endblock%}

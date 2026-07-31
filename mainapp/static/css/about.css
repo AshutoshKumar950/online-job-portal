@@ -1,0 +1,678 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=========================================
+            ABOUT HERO
+=========================================*/
+
+.about-hero{
+
+    background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+
+    padding:90px 0;
+
+    overflow:hidden;
+
+}
+
+.about-badge{
+
+    background:#ffffff;
+
+    color:#0d6efd;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:10px 22px;
+
+}
+
+.about-hero h1{
+
+    color:#ffffff;
+
+    font-size:58px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.about-hero p{
+
+    color:#eef3ff;
+
+    font-size:20px;
+
+    line-height:34px;
+
+}
+
+.about-hero .btn{
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.about-hero .btn-light{
+
+    color:#0d6efd;
+
+}
+
+.about-hero .btn-light:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+}
+
+.about-hero .btn-outline-light:hover{
+
+    background:#fff;
+
+    color:#0d6efd;
+
+}
+
+/*=========================================
+            HERO IMAGE
+=========================================*/
+
+.about-hero-img{
+
+    width:100%;
+
+    max-width:520px;
+
+    height:430px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    transition:.5s;
+
+}
+
+.about-hero-img:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.about-hero{
+
+    text-align:center;
+
+}
+
+.about-hero h1{
+
+    font-size:42px;
+
+}
+
+.about-hero p{
+
+    font-size:18px;
+
+}
+
+.about-hero-img{
+
+    margin-top:40px;
+
+    height:350px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about-hero{
+
+    padding:60px 0;
+
+}
+
+.about-hero h1{
+
+    font-size:32px;
+
+}
+
+.about-hero p{
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+.about-hero .btn{
+
+    width:100%;
+
+    margin-bottom:12px;
+
+}
+
+.about-hero-img{
+
+    height:280px;
+
+}
+
+}
+/*=========================================
+        SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    display:inline-block;
+
+    background:#eaf2ff;
+
+    color:#0d6efd;
+
+    padding:10px 25px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/*=========================================
+        ABOUT CARDS
+=========================================*/
+
+.about-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    transition:.4s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(13,110,253,.20);
+
+}
+
+/*=========================================
+        ICON BOX
+=========================================*/
+
+.icon-pill{
+
+    width:90px;
+
+    height:90px;
+
+    background:linear-gradient(135deg,#0d6efd,#3d8bfd);
+
+    color:#ffffff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:34px;
+
+    transition:.4s;
+
+}
+
+.about-card:hover .icon-pill{
+
+    transform:rotate(360deg);
+
+}
+
+/*=========================================
+        CARD CONTENT
+=========================================*/
+
+.about-card h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:#6c757d;
+
+    line-height:30px;
+
+    font-size:16px;
+
+}
+
+/*=========================================
+        CARD BODY
+=========================================*/
+
+.about-card .card-body{
+
+    padding:45px 30px;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.about-card{
+
+    margin-bottom:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.section-title{
+
+    font-size:13px;
+
+    padding:8px 20px;
+
+}
+
+.about-card .card-body{
+
+    padding:35px 20px;
+
+}
+
+.about-card h4{
+
+    font-size:22px;
+
+}
+
+.about-card p{
+
+    font-size:15px;
+
+    line-height:28px;
+
+}
+
+.icon-pill{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:28px;
+
+}
+
+}
+/*=========================================
+        HOW HIREHUB WORKS
+=========================================*/
+
+.process-step{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    background:#ffffff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.process-step:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 18px 35px rgba(13,110,253,.20);
+
+}
+
+.step-number{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#0d6efd,#3d8bfd);
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.process-step h5{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.process-step p{
+
+    margin:0;
+
+    color:#6c757d;
+
+    line-height:28px;
+
+}
+
+/*=========================================
+        COUNTER CARDS
+=========================================*/
+
+.counter-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.counter-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(13,110,253,.18);
+
+}
+
+.counter-card i{
+
+    font-size:45px;
+
+    color:#0d6efd;
+
+    margin-bottom:18px;
+
+}
+
+.counter-card h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#0d6efd;
+
+    margin-bottom:10px;
+
+}
+
+.counter-card p{
+
+    color:#666;
+
+    font-size:17px;
+
+    margin:0;
+
+}
+
+/*=========================================
+        CALL TO ACTION
+=========================================*/
+
+.about-cta{
+
+    background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+
+    padding:90px 0;
+
+}
+
+.about-cta h2{
+
+    font-size:44px;
+
+    font-weight:700;
+
+}
+
+.about-cta p{
+
+    font-size:18px;
+
+    color:#eef3ff;
+
+}
+
+.about-cta .btn{
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.about-cta .btn-light:hover{
+
+    background:#0b5ed7;
+
+    color:#ffffff;
+
+}
+
+.about-cta .btn-outline-light:hover{
+
+    background:#ffffff;
+
+    color:#0d6efd;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.process-step{
+
+    padding:20px;
+
+}
+
+.step-number{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:22px;
+
+}
+
+.counter-card{
+
+    margin-bottom:20px;
+
+}
+
+.about-cta{
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.process-step{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.step-number{
+
+    margin:auto;
+
+}
+
+.process-step h5{
+
+    font-size:20px;
+
+}
+
+.counter-card{
+
+    padding:25px 15px;
+
+}
+
+.counter-card h2{
+
+    font-size:34px;
+
+}
+
+.counter-card i{
+
+    font-size:36px;
+
+}
+
+.about-cta{
+
+    padding:60px 0;
+
+}
+
+.about-cta h2{
+
+    font-size:30px;
+
+}
+
+.about-cta p{
+
+    font-size:16px;
+
+}
+
+.about-cta .btn{
+
+    width:100%;
+
+    margin-bottom:12px;
+
+}
+
+}

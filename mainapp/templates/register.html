@@ -1,0 +1,629 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<!-- =========================
+        HEADER SECTION
+========================= -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- <link rel="stylesheet" href="{% static 'css/register.css' %}"> -->
+
+<div class="row py-5 text-center text-white" style="background:#166BC7 !important;">
+
+    <div class="col-sm-12">
+
+        <h1>Job Seeker Registration</h1>
+
+        <p>
+            Create your professional profile and find your dream job.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- =========================
+        MESSAGE ALERT
+========================= -->
+
+
+{% if messages %}
+
+{% for m in messages %}
+
+
+<div class="alert alert-warning alert-dismissible fade show">
+
+{{m}}
+
+<button type="button"
+class="btn-close"
+data-bs-dismiss="alert">
+</button>
+
+
+</div>
+
+
+{% endfor %}
+
+{% endif %}
+
+
+
+
+
+
+
+<div class="container py-5">
+
+
+<div class="row g-4">
+
+
+
+
+
+<!-- =========================
+        LEFT SIDE
+========================= -->
+
+
+<div class="col-lg-5">
+
+
+<div class="card shadow border-0 rounded-4 p-4 h-100">
+
+
+
+<img src="{% static 'img/register.jpg' %}"
+class="img-fluid mb-3"
+alt="Register">
+
+
+
+<h2 class="fw-bold">
+
+Welcome to HireHub
+
+</h2>
+
+
+
+<p class="text-muted">
+
+Join our platform and connect with thousands of
+companies. Create your profile and apply for jobs.
+
+</p>
+
+
+
+
+
+
+<div class="mt-4">
+
+
+<div class="d-flex mb-3">
+
+<i class="fa-solid fa-user-tie fa-2x me-3"></i>
+
+
+<div>
+
+<h5>Professional Profile</h5>
+
+<p>
+Showcase your skills and education.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="d-flex mb-3">
+
+
+<i class="fa-solid fa-briefcase fa-2x me-3"></i>
+
+
+<div>
+
+<h5>Find Jobs</h5>
+
+<p>
+Apply for your dream company.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="d-flex">
+
+
+<i class="fa-solid fa-shield-halved fa-2x me-3"></i>
+
+
+<div>
+
+<h5>Secure Platform</h5>
+
+<p>
+Your information is safe with us.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =========================
+        RIGHT FORM
+========================= -->
+
+
+<div class="col-lg-7">
+
+
+<div class="card shadow border-0 rounded-4 p-4">
+
+
+
+<h2 class="fw-bold">
+
+Create Account
+
+</h2>
+
+
+
+<p class="text-muted">
+
+Fill your details to register as Job Seeker.
+
+</p>
+
+
+
+
+
+
+
+<form method="post">
+
+
+{% csrf_token %}
+
+
+
+<div class="row g-3">
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-user me-2"></i>Name
+
+</label>
+
+
+<input type="text"
+name="name"
+class="form-control"
+placeholder="Enter Name"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-venus-mars me-2"></i>Gender
+
+</label>
+
+<br>
+
+
+<input type="radio"
+name="gender"
+value="Male">
+
+Male
+
+
+
+&nbsp;&nbsp;
+
+
+
+<input type="radio"
+name="gender"
+value="Female">
+
+Female
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-phone me-2"></i>Contact No
+
+</label>
+
+
+<input type="text"
+       class="form-control"
+       name="contactno"
+       placeholder="Enter Mobile Number"
+       maxlength="10"
+       minlength="10"
+       pattern="[0-9]{10}"
+       title="Please enter a valid 10-digit mobile number"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-envelope me-2"></i>Email
+
+</label>
+
+
+<input type="email"
+name="emailaddress"
+class="form-control"
+placeholder="Email Address"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-graduation-cap me-2"></i>Qualification
+
+</label>
+
+
+<input type="text"
+name="qualification"
+class="form-control"
+placeholder="Qualification"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-briefcase me-2"></i>Experience
+
+</label>
+
+
+<input type="text"
+name="experience"
+class="form-control"
+
+placeholder="Fresher / Experience"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+
+
+<label class="form-label">
+
+ <i class="fa-solid fa-code me-2"></i>Key Skills
+
+</label>
+
+
+<textarea
+name="keyskill"
+class="form-control"
+rows="2"
+placeholder="HTML CSS Python JavaScript"
+required></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+
+
+<label class="form-label">
+
+ <i class="fa-solid fa-location-dot me-2"></i>Address
+
+</label>
+
+
+<textarea
+name="address"
+class="form-control"
+rows="2"
+placeholder="Enter Address"
+required></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+<i class="fa-solid fa-lock me-2"></i>Password
+
+</label>
+
+
+<input type="password"
+name="password"
+class="form-control"
+placeholder="Create Password"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+ <i class="fa-solid fa-shield-halved me-2"></i>Confirm Password
+
+</label>
+
+
+<input type="password"
+name="confirm_password"
+class="form-control"
+placeholder="Confirm Password"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+
+
+<button type="submit"
+class="btn btn-dark w-100">
+
+<i class="fa-solid fa-user-plus me-2"></i>Register Now
+
+</button>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</form>
+
+
+
+
+
+<div class="text-center mt-3">
+
+
+Already have an account?
+
+
+<a href="{% url 'login' %}">
+
+Login Here
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- FONT AWESOME -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- SweetAlert2 CDN -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- SweetAlert2 CDN -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+{% if messages %}
+
+{% for message in messages %}
+
+<script>
+
+Swal.fire({
+
+    title: "{% if message.tags == 'success' %}Success!{% else %}Error!{% endif %}",
+
+    text: "{{ message }}",
+
+    icon: "{% if message.tags == 'success' %}success{% else %}error{% endif %}",
+
+    confirmButtonText: "OK",
+
+    timer: 3000
+
+});
+
+
+</script>
+
+{% endfor %}
+
+{% endif %}
+
+
+{% endblock %}

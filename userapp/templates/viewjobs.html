@@ -1,0 +1,38 @@
+{% extends 'userbase.html' %}
+{% load static %}
+{% block main %}
+
+<h1 style="color:blue; text-align: center;"> View Posted Job</h1>
+<hr/>
+<table class="table table-bordered" style="margin: auto;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Job type</th>
+            <th>Last Dast</th>
+            <th>Posted Date</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        {% for j in ji %}
+        <tr>
+            <td>{{j.id}}</td>
+            <td>{{j.title}}</td>
+            <td>{{j.description}}</td>
+            <td>{{j.location}}</td>
+            <td>{{j.salary}}</td>
+            <td>{{j.jobtype}}</td>
+            <td>{{j.lastdate}}</td>
+            <td>{{j.posteddate}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+
+{% endblock %}

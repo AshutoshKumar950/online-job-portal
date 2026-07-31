@@ -1,0 +1,183 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block main %}
+
+
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+
+
+<!-- ================= LOGIN HEADER ================= -->
+
+<div class="login-banner">
+
+    <h1>
+        Welcome Back
+    </h1>
+
+    <p>
+        Sign in to continue on this app.
+    </p>
+
+</div>
+
+
+
+
+
+<!-- ================= LOGIN BOX ================= -->
+
+
+<div class="container">
+
+
+<div class="row login-box">
+
+
+
+<!-- LEFT LOGIN FORM -->
+
+
+<div class="col-md-6 login-form-area">
+
+
+<h2>
+    Login
+</h2>
+
+
+<p>
+    Enter your credentials to access your account.
+</p>
+
+
+
+
+
+{% if messages %}
+
+{% for m in messages %}
+
+
+<div class="alert alert-warning alert-dismissible fade show">
+
+    {{m}}
+
+<button type="button"
+class="btn-close"
+data-bs-dismiss="alert">
+</button>
+
+
+</div>
+
+
+{% endfor %}
+
+{% endif %}
+
+
+
+
+
+
+
+
+<form method="POST">
+
+
+{% csrf_token %}
+
+
+
+<h6>
+<i class="fa-solid fa-user me-2"></i>Username
+</h6>
+
+
+<input type="text"
+class="form-control"
+placeholder="Enter Username"
+name="username"
+required>
+
+
+
+
+
+
+<h6>
+<i class="fa-solid fa-lock me-2"></i>Password
+</h6>
+
+
+<input type="password"
+class="form-control"
+placeholder="Enter Password"
+name="password"
+required>
+
+
+
+
+
+
+<button type="submit"
+class="login-btn">
+
+Login
+
+</button>
+
+
+
+
+<p class="create-account">
+
+New to HireHub?
+<a href="{% url 'register' %}">
+Create an account
+</a>
+
+</p>
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- RIGHT IMAGE -->
+
+
+<div class="col-md-6 login-image-area">
+
+
+<img src="{% static 'img/7loginimg.png' %}"
+alt="Login Image">
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+{% endblock %}
