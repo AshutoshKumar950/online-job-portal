@@ -1,4 +1,5 @@
-# 💼 Online Job Portal
+# 💼 Online-Job-Portal-Using-Python-Django
+
 
 <p align="center">
   <img src="screenshots/project-overview.png" alt="Online Job Portal" width="100%">
